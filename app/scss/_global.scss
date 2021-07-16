@@ -6,6 +6,8 @@ body {
 	font-weight: 400;
 	font-family: 'Open Sans', sans-serif;
 	color: $default;
+	overflow-x: hidden; // для скрытия меню rightside-menu--close
+	min-width: 320px;
 }
 
 .wrapper {
@@ -28,6 +30,10 @@ body {
 }
 input {
 	border: 1px solid $default;
+}
+button {
+	padding: 0;
+	margin: 0;
 }
 
 
