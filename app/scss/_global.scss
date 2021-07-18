@@ -28,6 +28,11 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+.container-fluid {
+	max-width: 1920px; // В место 100% можно и так задавать свои размеры
+	padding: 0 10px;
+	margin: 0 auto;
+}
 input {
 	border: 1px solid $default;
 }

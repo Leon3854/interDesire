@@ -12,5 +12,6 @@ $(function () {
     fade: true,
     infinite: true,
     autoplay: true,
+    speed: 1500
   });
 });
