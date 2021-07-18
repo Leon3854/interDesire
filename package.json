@@ -31,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/Leon3854/interDesire/issues"
   },
-  "homepage": "https://github.com/Leon3854/interDesire#readme"
+  "homepage": "https://github.com/Leon3854/interDesire#readme",
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
+  }
 }
