@@ -14,4 +14,13 @@ $(function () {
     autoplay: true,
     speed: 1500
   });
+
+  const mixer = mixitup('.gallery__inner', {
+    load: {
+        filter: '.bedroom'
+    },
+     animation: {
+        enable: false
+    }
+  });
 });
