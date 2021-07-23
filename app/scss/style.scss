@@ -37,6 +37,21 @@
     color: rgba(54,56,56,0.9033);
     line-height: 22px;
   }
+  &__list-link--active {
+    padding-bottom: 4px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      left: 0;
+      right: 0;
+      height: 2px;
+      bottom: 0;
+      border-radius: 1px;
+      background: rgba(54,56,56, 0.7);
+    }
+   
+  }
   
 }
 .footer {
@@ -593,3 +608,96 @@
     line-height: 38px;
   }
 }
+
+.breadcrumbs {
+  background-color: rgba(#dfdfdf, .35);
+  padding: 13px 14px;
+  position: relative;
+  z-index: 2;
+  &__list {
+    display: flex;
+  }
+  &__item::after {
+    content: '/';
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  &__item:last-child::after {
+    content: '';
+  }
+  &__link {
+    color: $default;
+    font-size: 14px;
+  }
+  
+}
+
+
+
+// ABOUT PAGE
+
+.about {
+  display: inline-block;
+  width: 100%;
+  &__prev {
+    background-image: url('../images/bg-about.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    text-align: center;
+    padding: 160px 0;
+    margin-top: -53px;  
+    z-index: 1;
+  }
+  &__prev-title {
+    color: $title;
+    @extend %title-font;
+    font-size: 60px;
+    line-height: 80px;
+  }
+  &__content {
+    padding: 130px 0 40px;
+  }
+  &__title {
+    color: $title;
+    @extend %title-font;
+    font-size: 36px;
+    line-height: 60px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    width: 822px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 200px;
+      height: 1px;
+      background: #979797;
+    }
+  }
+  &__text {
+    width: 825px;
+    margin-top: 23px;
+    margin-left: 285px;
+    line-height: 27px;
+    & p {
+      margin-bottom: 38px;
+    }
+  }
+  &__popup {
+    margin: 40px 0;
+    background-image: url('../images/hands-of-two-young-female-colleagues-looking-throu-5XLFDY5.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 414px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+}
+
+
