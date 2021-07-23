@@ -23,4 +23,6 @@ $(function () {
         enable: false
     }
   });
+
+  // $('[data-fancybox').fancybox({});
 });

@@ -34,6 +34,7 @@
   },
   "homepage": "https://github.com/Leon3854/interDesire#readme",
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "slick-carousel": "^1.8.1"
   }
 }
