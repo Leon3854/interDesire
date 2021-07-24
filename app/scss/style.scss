@@ -335,6 +335,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 30px;
+  padding-bottom: 70px;
   &__item {
     position: relative;
     
@@ -768,5 +769,16 @@
     border-radius: 2px;
     background-color: $title;
     margin-top: -2px;
+  }
+}
+
+.partners {
+  padding: 16px 0 60px;
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  &__item {
+    margin: 0 auto;
   }
 }
