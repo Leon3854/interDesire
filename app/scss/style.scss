@@ -620,7 +620,7 @@
   background-color: rgba(#dfdfdf, .35);
   padding: 13px 14px;
   position: relative;
-  z-index: 2;
+  z-index: 999;
   &__list {
     display: flex;
   }
@@ -787,4 +787,9 @@
   &__item {
     margin: 0 auto;
   }
+}
+
+.map {
+  margin-top: -50px;
+  margin-bottom: 55px;
 }
