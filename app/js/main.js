@@ -15,6 +15,13 @@ $(function () {
     speed: 1500
   });
 
+  $(".contact-slider").slick({
+    arrows: false,
+    dots: true,
+    slidesToShow: 10,
+    slidesToScroll: 10
+  });
+
   const mixer = mixitup('.gallery__inner', {
     load: {
         filter: '.bedroom'
@@ -24,5 +31,5 @@ $(function () {
     }
   });
 
-  // $('[data-fancybox').fancybox({});
+  
 });
