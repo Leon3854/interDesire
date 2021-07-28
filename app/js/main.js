@@ -22,6 +22,15 @@ $(function () {
     slidesToScroll: 10
   });
 
+  $('.article-slider-box').slick({
+    // arrows: false,
+    dots: false,
+    infinite: true,
+    // autoplay: true,
+    prevArrow: '<button type="button" class="slick-ico slick-prev"><img class="article-slider-prew" src="images/blog/prew.svg" alt="ico"></button>',
+    nextArrow: '<button type="button" class="slick-ico slick-next"><img class="article-slider-next" src="images/blog/next.svg" alt="ico"></button>'
+  });
+
   const mixer = mixitup('.gallery__inner', {
     load: {
         filter: '.bedroom'
@@ -29,7 +38,6 @@ $(function () {
      animation: {
         enable: false
     }
-  });
-
-  
+  });  
 });
+
